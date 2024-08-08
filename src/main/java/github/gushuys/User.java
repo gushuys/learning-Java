@@ -1,8 +1,8 @@
 package github.gushuys;
 
-public class User {
+public abstract class User {
     private String name;
-    private int age;
+    protected int age;
 
     public User(String name, int age) {
         this.name = name;
@@ -10,7 +10,13 @@ public class User {
     }
 
     public String getUser() {
-        return String.format("Имя: %s, возраст: %d", name, age);
+        return String.format("Имя: %s, возраст: %d", name, getAge());
     }
 
+    @Override
+    public String toString() {
+        return getUser();
+    }
+
+    public abstract int getAge();
 }
