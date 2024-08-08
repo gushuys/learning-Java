@@ -1,7 +1,9 @@
 package github.gushuys;
 
-public class Main {
+class learn {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        String name = "sukamlyat";
+        System.out.printf("поздравляю, тебя зовут %s  мразь младшая\n", name);
+        System.out.printf("поздравляю, тебя зовут %s  мразь младшая\n", name);
     }
 }
